@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>secjsdemo</title>
+</head>
+<body>
+    <h1>This is JS  Assignment!!!</h1>
+    <script type="text/javascript">
+    
+        var today=new Date();
+        var dd=today.getDate();
+        var mm=today.getMonth();
+        var yyyy=today.getFullYear();
+        var hour=today.getHours();
+        var min=today.getMinutes();
+        var sec=today.getSeconds();
+        var ampm=today.getTimezoneOffset();
+        var days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+        var dayname=days[new Date().getDay()];
+        
+        
+        if(dd<10)
+        {
+            dd='0'+dd;
+        }
+        if(mm<10)
+        {
+            mm='0'+mm;
+        }
+        document.writeln("Today is "+dayname);
+        document.write("<br>");
+        document.writeln("Current time is:"+hour+":"+min+":",+sec);
+    </script>
+</body>
+</html>
