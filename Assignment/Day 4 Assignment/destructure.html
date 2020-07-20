@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destructing the objects</title>
+</head>
+<body>
+    <h2>
+        destructing the objects
+    </h2>
+    <script>
+        let student={
+    name:'Helsinki',
+    age:24,
+    projects:{
+        diceGame:"Two player dice game using javascript"
+    }
+}
+
+console.log(student.name);
+console.log(student.projects.diceGame);
+
+// Destructuring of Objects
+const{name,age}=student;
+console.log(name,age);
+    </script>
+</body>
+</html>
